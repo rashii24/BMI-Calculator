@@ -1,0 +1,34 @@
+
+
+
+*parseInt(): JavaScript parseInt() Method is used to 'accept the string' and radix parameter and 'convert it into an integer' &
+If the string does not contain a numeric value then it returns NaN i.e, not a number. 
+The radix parameter is used to specify which numeral system to be used. 
+syntax: parseInt(value, radix);
+where,
+Value: This parameter contains a string that is converted to an integer.
+radix: It is optional. This parameter represents the radix or base to be used.(e.g.: 2,8,10,16).
+
+*isNaN(): In JavaScript NaN refers to "Not-a-Number",
+it returns 'true' if a value is 'NaN'.
+(The isNaN() method converts the value to a number before testing it.)
+
+*toFixed(): The toFixed() method rounds the string to a specified number of decimals.
+syntax:    number.toFixed(x)
+where,
+x= Optional. Number of decimals. Default is 0 (no decimals).
+Return value:   A string- The representation of a number with (or without) decimals.
+
+
+=> parseInt() is used while storing user input into respective variables 
+in order to return NaN if user does not input a numeric value. This 
+returned value is further used to check for an invalid input from user
+in order to display an error message.
+
+=> isNaN() is used to check whether user input is "Not-a-Number",
+if so, then return an error message that will request to provide a valid input.
+
+=> toFixed() is used to round off the calculated decimal result upto the 
+required decimal places. Here we want two decimal places in the result so,
+we used '.toFixed(2)' along with the calculation formula.
+
